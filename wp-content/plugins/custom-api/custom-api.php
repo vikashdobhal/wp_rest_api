@@ -8,7 +8,7 @@
 
 
 define('CUSTAPI_PLUGIN_NAME', 'CUS_API');
-
+global $wpdb;
 // Create a admin menu
 add_action('admin_menu', 'api_menu');
 
@@ -49,7 +49,7 @@ function api_fetch_data()
                 $currency[] = $curr->code . '(' . $curr->symbol . ')';
                 $my_post = array(
                     'post_title'	=> $country->name,
-                    'post_type'		=> 'testimonial',
+                    'post_type'		=> 'country',
                     'post_status'	=> 'publish'
                 );
                 // insert the post into the database
