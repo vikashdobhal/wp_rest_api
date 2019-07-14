@@ -1,0 +1,20 @@
+/*========== footer css here ==========*/
+footer{
+    &.site-footer{
+        background-color: $grak-gray;
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 20px 0;
+    }
+}
+
+/*========== header css here ========*/
+.header{
+    &.site-header{
+        background-color: $gray-color;
+        padding: 20px 0;
+
+    }
+}

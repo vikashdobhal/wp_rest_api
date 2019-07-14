@@ -1,0 +1,66 @@
+/*============= font family variables here ===========*/
+
+$lato-font: 'Lato', sans-serif;
+$fontawesome-pro: 'Font Awesome 5 Pro';
+/*====== color variables ==========*/
+$black: #000000;
+$medium-black: #424242;
+$light-black: #555555;
+$btn-bg-black: #777777;
+$input-bg-color: #F2F2F2;
+$gray-btn: #aaaaaa;
+$medium-black: #595959;
+$placeholder-color: #CCCCCC;
+$gray-color: #bebebe;
+$medium-gray: #e5e5e5;
+$grak-gray: #979797;
+$lighter-gray: #f5f5f5;
+$white: #ffffff;
+$medium-green: #49B6AA;
+$blue-color: #245886;
+$dark-blue: #287ABA;
+$medium-blue: #288dca;
+$lighter-blue: #389dda;
+$red-color: #B31A11;
+$border-color: #bfbfbf;
+$light-gray-bg: #F4F5F5;
+$green-color: #008000;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$base-font-weight: 400;
+
+
+$font-size-h1: 3.75rem; // font size 48px;
+$font-size-h2: 2.25rem; // font size 36px;
+$font-size-h3: 1.5rem; // font size 24px;
+$font-size-h4: 1.125rem; // font size 18px;
+$font-size-h5: 1rem;  // font size 16px;
+$font-size-h6: 0.875rem;  // font size 14px;
+
+/*============= media screen variables here ==============*/
+// Small devices (landscape phones, 576px and up)
+$smscreen-size: 576px;
+// Medium devices (tablets, 768px and up)
+$mdscreen-size: 768px;
+// Large devices (desktops, 992px and up)
+$lgscreen-size: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$xlscreen-size: 1200px;
+
+/*============= container custom width css here =============*/
+.container{
+     @media screen and (min-width: 1400px){
+        max-width: 1300px;
+    }
+}
+
+
+.custom-object-fit {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.custom-object-fit img {
+    opacity: 0;
+}

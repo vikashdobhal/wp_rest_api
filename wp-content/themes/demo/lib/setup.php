@@ -8,8 +8,6 @@ function add_scripts()
     if (! is_admin()) {
         wp_enqueue_script("jquery-js", 'https://code.jquery.com/jquery-3.3.1.min.js', false, true);
         wp_enqueue_script("bootstrap-js", 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', false, true);
-        wp_enqueue_script("slick-js", 'https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js', false, true);
-        wp_enqueue_script("wow-js", 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?ver=1', false, true);
         wp_enqueue_script("custom-js", get_template_directory_uri() . "/js/custom.js", array( "jquery" ), false, true);
     }
 }
@@ -24,12 +22,9 @@ function add_stylesheets()
 {
     if (! is_admin()) {
         wp_enqueue_style('bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', '1.0.0', 'all');
-        wp_enqueue_style('font-css', 'https://use.typekit.net/mwq6azt.css', array( ), '1.0.0', 'all');
+        wp_enqueue_style('font-css', 'https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap', array( ), '1.0.0', 'all');
         wp_enqueue_style('fontawesome-css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', array( ), '1.0.0', 'all');
-        wp_enqueue_style('wow-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css?ver=1.0.0', array( ), '1.0.0', 'all');
         wp_enqueue_style('style', get_template_directory_uri() . '/css/master.css', array( ), '1.0.0', 'all');
-        wp_enqueue_style('slick-css', 'https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css', array( ), '1.3.0', 'all');
-        wp_enqueue_style('slick-theme-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.6.0/slick/slick-theme.css', array( ), '1.3.0', 'all');
     }
 }
 
@@ -125,4 +120,3 @@ add_action('login_head', 'custom_login_logo');
 // ==========================================================================
 //  RESET SOME WORDPRESS DEFAULTS
 // ==========================================================================
-define('GMAP_KEY', 'AIzaSyAH--9JVKEz8Y2Y75LBKA-aBouLTkTTxe0');

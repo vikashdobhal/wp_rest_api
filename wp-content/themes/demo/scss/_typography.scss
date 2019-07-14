@@ -1,0 +1,166 @@
+/*=========== All typography css here ===============*/
+
+
+html{
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+    }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: $base-font-weight;
+    -webkit-font-smoothing: antialiased;
+    font-family: $lato-font;
+}
+h1{
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    font-weight: 700;
+    color: $black;
+    font-family: $lato-font;
+    text-transform: capitalize;
+    @media screen and (min-width: $mdscreen-size){
+        font-size: 3rem;
+        line-height: 3.75rem;
+    }
+    @media screen and (min-width: $lgscreen-size){
+        font-size: $font-size-h1;
+        line-height: 3.75rem;
+    }
+    &.medium-font{
+        font-size: 3rem;
+        line-height: 3.625rem;
+    }
+}
+
+h2{
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+    color: $black;
+    font-weight: 700;
+    font-family: $lato-font;
+    @media screen and (min-width: $mdscreen-size){
+        font-size: $font-size-h2;
+        line-height: 2.5625rem;
+    }
+}
+
+h3{
+        font-size: $font-size-h3;
+        line-height: 1.875rem;
+        font-weight: 700;
+        color: $black;
+        font-family: $lato-font;
+        text-transform: inherit;
+        
+}
+
+h4{
+    font-size: $font-size-h4;
+    line-height: 1.375rem;
+    font-family: $lato-font;
+    font-weight: 700;
+    color: $black;
+}
+
+h5{
+    font-size: $font-size-h5;
+    line-height: 1.25rem;
+    font-family: $lato-font;
+    font-weight: 400;
+    color: $black;
+}
+h6{
+    font-size: $font-size-h6;
+    line-height: 1.125rem;
+    font-family: $lato-font;
+    font-weight: 400;
+    color: $black;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-family: $lato-font;
+    font-weight: 500;
+    color: $black;
+}
+
+a{
+    font-family: $lato-font;
+    font-size: 0.9375rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $red-color;
+    &:hover,
+    &:active
+        {
+        color: $black;
+        text-decoration: none;
+    }
+    &:focus{
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
+a[href^="mailto:"]{
+   text-transform: lowercase;
+    
+}
+strong,
+strong>a{
+    font-family: $lato-font;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 800;
+    letter-spacing: inherit;
+    @media screen and (min-width: $lgscreen-size){
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+    }
+}
+
+
+a[href^="mailto:"] {
+    text-transform: lowercase;
+    h1,h2,h3,h4,h5,h6,strong,em,b,span,p{
+        text-transform: lowercase;
+    }
+}
+
+ul{
+    li{
+        list-style-type: none;
+        font-family: $lato-font;
+        .fa{
+            color: $lighter-blue;
+        }
+    }
+    li,a{
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: $lighter-blue;
+        font-weight: 400;
+        font-family: $lato-font;
+        &:hover{
+            color: $medium-green;
+        }
+    }
+}
+a{
+    &:focus{
+        outline: none;
+    }
+}

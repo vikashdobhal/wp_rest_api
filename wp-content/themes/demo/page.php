@@ -13,28 +13,24 @@
  */
 
 get_header();
-?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+    if ( have_rows( 'modules' ) ) :
 
-			get_template_part( 'template-parts/content', 'page' );
+        $block_count = 1;
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+        while ( have_rows( 'modules' ) ) : the_row();
 
-		endwhile; // End of the loop.
-		?>
+            ACF_Layout::render( get_row_layout(), $block_count );
+            $block_count ++;
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        endwhile;
 
-<?php
-get_sidebar();
+    endif;
+
+endwhile; endif;
+
 get_footer();
+
+?>

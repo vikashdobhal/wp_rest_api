@@ -1,8 +1,8 @@
 {
-  "name": "Demo",
+  "name": "demo",
   "version": "0.1.0",
-  "description": "Demo code base",
-  "repository": "",
+  "description": "demo code base",
+  "repository": "https://git.ithands.com/ITHands/ezradigital-cheyney--wp.git",
   "private": true,
   "devDependencies": {
     "autoprefixer": "^6.4.0",
